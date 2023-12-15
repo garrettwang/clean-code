@@ -280,6 +280,17 @@ Gas Station Deluxe => GSD and then you have: GSDAccountAddress... it is not a go
 ## Final Words 
 Follow these rules and refactor code to help resolve these problems.
 
+## Referencee Table for Meaningful Names
+
+| Book                          | Reference                                                                                                                    |
+|-------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| **Clean Code**                | Chapter 2 Meaningful Name                                                                                                    |
+| **Implementation Patterns**   | Chapter 8 Methods "Intention-Revealing Name"                                                                                 |
+| **Refactoring**               | Chapter 6 Page 106 "Extract Function" and  Page 137 "Rename Variable" and  Chapter 9 Organizing Data Page 244 "Rename Field" |
+| **Design Patterns**           | no                                                                                                                           |
+| **Clean Object Calisthenics** | 'Simple Design' (Simple Design is about naming and remove duplication in cycle)                                              |
+|                               |                                                                                                                              |
+
 # <a name="functions">3. Functions</a>
 Functions are the first line of organization in any program.
 ## Small!
@@ -307,6 +318,16 @@ FUNCTIONS SHOULD DO ONE THING. THEY SHOULD DO IT WELL. THEY SHOULD DO IT ONLY
 A function do one thing though it contains calls to other functions. But those functions should be always one level below to the stated name of the function.
 
 We create functions to decompose a larger concept (the name of the function) into a set of steps at the next level of abstraction.
+## Referencee Table for Do One Thing
+
+| Book                          | Reference                           |
+|-------------------------------|-------------------------------------|
+| **Clean Code**                | Chapter 3 Function                  |
+| **Implementation Patterns**   | Chapter 8 Methods "Composed Method" |
+| **Refactoring**               | Chapter 6 Page 106 Extract Function |
+| **Design Patterns**           | no                                  |
+| **Clean Object Calisthenics** | "IOSP"                              |
+|                               |                                     |
 
 ## Sections within Functions 
 **A function that is divided into section will be probably doing more than one thing.**
@@ -734,6 +755,17 @@ public interface Vehicle {
 Abstract vehicle doesn't expose the details of the data.
 
 **The worst option is to blithely add getters and setters**
+## Referencee Table for Data Abstraction
+
+| Book                          | Reference                            |
+|-------------------------------|--------------------------------------|
+| **Clean Code**                | Chapter 10 Encapsulation             |
+| **Implementation Patterns**   | "Indirect Access" in Chapter 6 State |
+| **Refactoring**               | "Encapsulation" Page 161             |
+| **Design Patterns**           | Page 41 "Compositor and Composition" |
+| **Clean Object Calisthenics** | "Messaging"                          |
+|                               |                                      |
+
 ## Data/Object Anti-Symmetry 
 **Objects** vs **Data structures**
 * Objects hide their data behind abstractions and expose functions that operate on that data.
